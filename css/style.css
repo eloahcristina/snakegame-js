@@ -1,0 +1,52 @@
+body {
+  background: url('../bg.png');
+}
+
+.game {
+  height: 95vh;
+  width: 95;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.glow {
+  font-size: 50px;
+  color: back;
+  text-align: center;
+  -webkit-animation: glow 5s ease-in-out infinite alternate;
+  -moz-animation: glow 5s ease-in-out infinite alternate;
+  animation: glow 5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00ffa9, 0 0 30px #00ffa9,
+      0 0 40px #00ffa9, 0 0 50px #00ffa9, 0 0 60px #00ffa9;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #00b9ff, 0 0 30px #00b9ff,
+      0 0 40px #00b9ff, 0 0 50px #00b9ff, 0 0 60px #00b9ff, 0 0 70px #00b9ff;
+  }
+}
+
+p {
+  font-size: 14px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: -10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: whitesmoke;
+}
